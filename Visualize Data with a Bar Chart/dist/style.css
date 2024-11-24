@@ -1,0 +1,57 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+#title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#canvas {
+  background-color: #f8f9fa; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  margin: 20px;
+}
+
+.bar {
+  fill: #007bff;
+  transition: fill 0.3s ease;
+}
+
+.bar:hover {
+  fill: #0056b3; 
+  stroke: #004494; 
+  stroke-width: 1;
+}
+
+#tooltip {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9); 
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-size: 0.9em;
+}
+
+.bar {
+  background: linear-gradient(to top, #007bff, #0056b3); 
+}
+
+.tick line {
+  stroke: #ccc;
+}
+
+.tick text {
+  font-size: 0.8em;
+  fill: #666;
+}
+
+#x-axis path,
+#y-axis path {
+  stroke: #333;
+}
